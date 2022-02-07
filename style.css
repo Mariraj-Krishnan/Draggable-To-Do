@@ -43,12 +43,6 @@ body {
   background-color: #03c03c;
   color: white;
 }
-.list-container:nth-child(1) p {
-  border: 2px solid hsl(0deg, 0%, 80%);
-}
-.list-container:nth-child(2) p {
-  border: 2px solid hsl(0deg, 0%, 80%);
-}
 .list-container h2 {
   background-color: white;
   padding: 10px 20px;
@@ -69,6 +63,7 @@ body {
   color: hsl(0deg, 0%, 30%);
   animation: scale 50ms forwards ease-in;
   animation-delay: 50ms;
+  border: 2px solid hsl(0deg, 0%, 80%);
 }
 @keyframes scale {
   10% {
