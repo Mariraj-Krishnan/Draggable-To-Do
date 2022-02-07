@@ -28,18 +28,26 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  background-color: hsl(0deg, 0%, 80%);
+  background-color: white;
   padding: 10px;
   height: fit-content;
-  border-radius: 4px;
+  border-radius: 6px;
   transition: height 50ms ease-in;
-  box-shadow: 0px 4px 6px hsla(0deg, 0%, 50%, 0.2);
+  box-shadow: 0px 0px 8px 4px hsla(0deg, 0%, 60%, 0.2);
 }
 .list-container:nth-child(1) h2 {
-  color: orange;
+  background-color: #ff8c00;
+  color: white;
 }
 .list-container:nth-child(2) h2 {
-  color: rgb(59, 255, 59);
+  background-color: #03c03c;
+  color: white;
+}
+.list-container:nth-child(1) p {
+  border: 2px solid hsl(0deg, 0%, 80%);
+}
+.list-container:nth-child(2) p {
+  border: 2px solid hsl(0deg, 0%, 80%);
 }
 .list-container h2 {
   background-color: white;
@@ -56,9 +64,9 @@ body {
   padding: 15px;
   border-radius: 4px;
   cursor: grab;
-  font-weight: 500;
+  font-weight: 600;
   transform: scale(0);
-  color: hsl(0deg, 0%, 40%);
+  color: hsl(0deg, 0%, 30%);
   animation: scale 50ms forwards ease-in;
   animation-delay: 50ms;
 }
@@ -71,28 +79,31 @@ body {
   }
 }
 .dragging {
-  border: 2px solid orange !important;
+  border: 2px solid #ff8c00 !important;
 }
 .add {
   position: relative;
   right: 219px;
   width: 300px;
+  border-radius: 5px;
   gap: 10px;
   display: flex;
+  padding: 10px;
   margin: 30px auto 10px;
+  box-shadow: 0px 0px 8px 4px hsla(0deg, 0%, 60%, 0.2);
 }
 .add input {
   height: 50px;
-  border: 3px solid hsl(0deg, 0%, 60%);
+  width: 100%;
+  border: 2px solid hsl(0deg, 0%, 60%);
   border-radius: 4px;
   padding: 10px;
   font-size: 16px;
   font-weight: 600;
-  flex-grow: 1;
   color: hsl(0deg, 0%, 50%);
 }
 .add input:focus {
-  border: 3px solid rgb(1, 158, 211);
+  border: 2px solid rgb(1, 158, 211);
   outline: none;
 }
 .add button {
@@ -100,6 +111,7 @@ body {
   height: 50px;
   background-color: rgb(1, 158, 211);
   border-radius: 4px;
+  flex-shrink: 0;
   color: #ffffff;
   text-align: center;
   line-height: 40px;
@@ -113,7 +125,7 @@ button:active {
 .icon {
   width: 100px;
   height: 100px;
-  background-color: orange;
+  background-color: hsl(0deg, 0%, 60%);
   border-radius: 4px;
   text-align: center;
   line-height: 100px;
@@ -121,10 +133,9 @@ button:active {
   color: #ffffff;
   border: none;
   box-shadow: none;
-  /* cursor: pointer; */
 }
 .delete.active {
-  outline: 2px dashed orange;
+  outline: 2px dashed hsl(0deg, 0%, 60%);
   outline-offset: 5px;
   filter: brightness(1.1);
 }
