@@ -11,14 +11,7 @@ function drag() {
     draggable.addEventListener("dragstart", () => {
       draggable.classList.add("dragging");
     });
-    draggable.addEventListener("touchstart", () => {
-      draggable.classList.add("dragging");
-    });
     draggable.addEventListener("dragend", () => {
-      draggable.classList.remove("dragging");
-      saveTasks();
-    });
-    draggable.addEventListener("touchend", () => {
       draggable.classList.remove("dragging");
       saveTasks();
     });
