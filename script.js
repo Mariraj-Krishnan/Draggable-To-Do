@@ -2,6 +2,7 @@ const containers = document.querySelectorAll(".list-container");
 const deleteDo = document.querySelector(".delete");
 const input = document.querySelector("input");
 const doTemplate = document.querySelector("template");
+alert('This page will only work on desktop browsers');
 document.body.addEventListener("dragover", function (e) {
   e.preventDefault();
 });
